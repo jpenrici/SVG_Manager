@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager convert(window_height)</description>
+    <content><![CDATA[convert(${1:/* window_height */})]]></content>
+    <tabTrigger>convert</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

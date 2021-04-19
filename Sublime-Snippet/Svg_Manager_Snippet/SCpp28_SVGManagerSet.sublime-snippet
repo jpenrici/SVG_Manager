@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager set(origin,text,style,label)</description>
+    <content><![CDATA[set(${1:/* origin */},${2:/* text */},${3:/* style */},${4:/* label */})]]></content>
+    <tabTrigger>set</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

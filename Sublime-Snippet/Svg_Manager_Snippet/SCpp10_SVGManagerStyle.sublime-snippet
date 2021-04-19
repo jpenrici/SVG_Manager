@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager Style(fill,stroke)</description>
+    <content><![CDATA[Style(${1:/* fill */},${2:/* stroke */})]]></content>
+    <tabTrigger>Style</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

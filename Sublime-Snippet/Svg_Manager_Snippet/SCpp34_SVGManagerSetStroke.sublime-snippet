@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager setStroke(stroke,stroke_opacity,stroke_width)</description>
+    <content><![CDATA[setStroke(${1:/* stroke */},${2:/* stroke_opacity */},${3:/* stroke_width */})]]></content>
+    <tabTrigger>setStroke</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager setFont(font)</description>
+    <content><![CDATA[setFont(${1:/* font */})]]></content>
+    <tabTrigger>setFont</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 
