@@ -16,8 +16,13 @@ using namespace std;
 #define VBY 480
 #define PI 3.14159265
 
-#define COLOR_BG      "#FFFFFF"
-#define COLOR_DEFAULT "#000000"
+#define WHITE         "#FFFFFF"
+#define BLACK         "#000000"
+#define RED           "#FF0000"
+#define GREEN         "#00FF00"
+#define BLUE          "#0000FF"
+#define COLOR_BG      WHITE
+#define COLOR_DEFAULT BLACK
 
 class Color
 {
@@ -133,7 +138,6 @@ private:
     vector<string> svg;
 };
 
-
 class Text
 {
 public:
@@ -166,10 +170,14 @@ public:
     void save();
     void view();
 
+    void setPath(string path);
+    void background(bool enable);
+
 private:
     int vbx;
     int vby;    
     string path;
+    bool bg_enabled;
     vector<string> svg;
     vector<string> content;
 };

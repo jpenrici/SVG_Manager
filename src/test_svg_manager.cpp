@@ -42,7 +42,10 @@ int main()
 
     // SVG
     int window_size = 500;
-    SVG imageSVG("../images/test_image.svg", window_size, window_size);
+
+    string path = "../images/";
+    string filename = "test_image.svg";
+    SVG imageSVG(path + filename, window_size, window_size);
 
     // Color
     Color color;
@@ -210,6 +213,14 @@ int main()
     // Finalize
     imageSVG.make();
     // imageSVG.view();
+    imageSVG.save();
+
+    // Background transparent
+    imageSVG.background(false);
+    imageSVG.make();
+
+    // Copy transparent
+    imageSVG.setPath(path + "copy_" + filename);
     imageSVG.save();
 
     return 0;

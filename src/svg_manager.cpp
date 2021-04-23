@@ -319,6 +319,8 @@ SVG::SVG(string path)
     vbx = VBX;
     vby = VBY;
     
+    bg_enabled = true;
+
     cout << vbx << "x" << vby << " SVG image, initialized ...\n";
     clear();
 }
@@ -328,6 +330,9 @@ SVG::SVG(string path, int window_width, int window_height)
     this->path = path;
     vbx = window_width;
     vby = window_height;
+    
+    bg_enabled = true;
+    
     cout << vbx << "x" << vby << " SVG image, initialized ...\n";
     clear();
 }
@@ -347,23 +352,26 @@ void SVG::make()
     };
     const vector<string> FOOTER {"</svg>"};
 
-    // background
-    Style style;
-    vector<string> bg = Rectangle(Point(0, 0), vbx, vby, 0, 0, style,
-        "background").getSvgVector();
-
     // layer
     vector<string> layer;
     string label = "Layer_CppSVG";
     layer.push_back(TAB1 + "<g");
-    layer.push_back(TAB2 + "inkscape:label=\"layer_" + label + "\"");
+    layer.push_back(TAB2 + "inkscape:label=\"" + label + "\"");
     layer.push_back(TAB2 + "inkscape:groupmode=\"layer\"");
     layer.push_back(TAB2 + "id=\"" + label + "\">");
 
-    layer.reserve(layer.size() + bg.size() + content.size());
-    layer.insert(layer.end(), bg.begin(), bg.end());
+    // background
+    if (bg_enabled)
+    {
+        Style style;
+        vector<string> bg = Rectangle(Point(0, 0), vbx, vby, 0, 0, style,
+            "background").getSvgVector();
+        layer.reserve(layer.size() + bg.size());
+        layer.insert(layer.end(), bg.begin(), bg.end()); 
+    }
 
     // content
+    layer.reserve(layer.size() + content.size());
     layer.insert(layer.end(), content.begin(), content.end());
     layer.push_back(TAB1 + "</g>");
 
@@ -413,4 +421,14 @@ void SVG::view()
 {
     for (string str : svg)
         cout << str << '\n';
+}
+
+void SVG::setPath(string path)
+{
+    this->path = path;
+}
+
+void SVG::background(bool enable)
+{
+    bg_enabled = enable;
 }
