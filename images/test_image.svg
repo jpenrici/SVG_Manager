@@ -67,5 +67,13 @@
         id="Txt"
         x="250.000000" y="30.000000"
         style="fill:#0000FF;fill-opacity:1.000000;stroke:#FF0000;stroke-width:1.000000;stroke-opacity:1.000000font-style:normal;font-size:30.000000px;font-family:Courier">SVG Manager</text>
+      <!-- Linked Image -->
+      <image
+        xlink:href="../images/cattleya-08B.png"
+        id="Img_5"
+        x="185.000000" y="160.000000"
+        preserveAspectRatio="none"
+        height="80.000000"
+        width="80.000000" />
     </g>
 </svg>
