@@ -132,6 +132,22 @@ Point Point::swap()
     return Point(y, x);
 }
 
+// Class Element
+////////////////
+string Element::get()
+{
+    string output = "";
+    for (auto item : svg)
+        output += item + '\n';
+
+    return output;
+}
+
+vector<string> Element::getSvgVector()
+{
+    return svg;
+}
+
 // Class Polygon
 ////////////////
 Polygon::Polygon(vector<Point> points)
@@ -142,20 +158,6 @@ Polygon::Polygon(vector<Point> points)
 Polygon::Polygon(vector<Point> points, Style style, string label)
 { 
     set(points, style, label);
-}
-
-string Polygon::get()
-{
-    string output = "";
-    for (auto item : svg)
-        output += item + '\n';
-
-    return output;
-}
-
-vector<string> Polygon::getSvgVector()
-{
-    return svg;
 }
 
 void Polygon::set(vector<Point> points, Style style, string label)
@@ -198,20 +200,6 @@ Rectangle::Rectangle(Point origin, float width, float height, float radius_x,
     set(origin, width, height, radius_x, radius_y, style, label);
 }
 
-string Rectangle::get()
-{
-    string output = "";
-    for (auto item : svg)
-        output += item + '\n';
-
-    return output;
-}
-
-vector<string> Rectangle::getSvgVector()
-{
-    return svg;
-}
-
 void Rectangle::set(Point origin, float width, float height, float radius_x,
     float radius_y, Style style, string label)
 {
@@ -238,20 +226,6 @@ Circle::Circle(Point origin, float radius)
 Circle::Circle(Point origin, float radius, Style style, string label)
 {
     set(origin, radius, style, label);
-}
-
-string Circle::get()
-{
-    string output = "";
-    for (auto item : svg)
-        output += item + '\n';
-
-    return output;
-}
-
-vector<string> Circle::getSvgVector()
-{
-    return svg;
 }
 
 void Circle::set(Point origin, float radius, Style style, string label)
@@ -283,20 +257,6 @@ Text::Text(Point origin, string text, Style style, string label)
     set(origin, text, style, label);
 }
 
-string Text::get()
-{
-    string output = "";
-    for (auto item : svg)
-        output += item + '\n';
-
-    return output;
-}
-
-vector<string> Text::getSvgVector()
-{
-    return svg;
-}
-
 void Text::set(Point origin, string text, Style style, string label)
 {
     label = !label.empty() ? label : "Text_" + to_string(index++);
@@ -309,6 +269,30 @@ void Text::set(Point origin, string text, Style style, string label)
         TAB3 +  style.get() + ">" + text + "</text>"
     };
 
+}
+
+// Class Image
+//////////////
+Image::Image(Point origin, float width, float height, string path)
+{
+    set(origin, width, height, path, STRING_EMPTY);
+}
+
+void Image::set(Point origin, float width, float height, string path, string label)
+{
+    label = !label.empty() ? label : "Img_" + to_string(index++);
+    
+    svg.clear();
+    svg = {
+        TAB2 + "<!-- Linked Image -->",
+        TAB2 + "<image",
+        TAB3 + "xlink:href=\"" + path + "\"",
+        TAB3 + "id=\"" + label + "\"",
+        TAB3 + "x=\"" +  to_string(origin.x) + "\" y=\"" +  to_string(origin.y) + "\"",
+        TAB3 + "preserveAspectRatio=\"none\"",
+        TAB3 + "height=\"" +  to_string(height) + "\"",
+        TAB3 + "width=\"" +  to_string(width) + "\" />"
+    };
 }
 
 // Class SVG

@@ -54,6 +54,7 @@ public:
         float stroke_opacity);  
 
 private:
+
     Color fill;
     Color stroke;
     float fill_opacity;
@@ -85,7 +86,19 @@ public:
     float y;
 };
 
-class Polygon
+class Element
+{
+public:
+
+    string get();
+    vector<string> getSvgVector();
+
+protected:
+
+    vector<string> svg;    
+};
+
+class Polygon : Element
 {
 public:
 
@@ -94,15 +107,12 @@ public:
     Polygon(vector<Point> points, Style style, string label);
     ~Polygon() {}
 
-    string get();
-    vector<string> getSvgVector();
+    string get() { return Element::get(); }
+    vector<string> getSvgVector() { return Element::getSvgVector(); }
     void set(vector<Point> points, Style style, string label);
-
-private:
-    vector<string> svg;
 };
 
-class Rectangle
+class Rectangle : Element
 {
 public:
 
@@ -113,46 +123,51 @@ public:
         float radius_y, Style style, string label);
     ~Rectangle() {}
 
-    string get();
-    vector<string> getSvgVector();
+    string get() { return Element::get(); }
+    vector<string> getSvgVector() { return Element::getSvgVector(); }
     void set(Point origin, float width, float height, float radius_x,
         float radius_y, Style style, string label); 
-
-private:
-    vector<string> svg;
 };
 
-class Circle
+class Circle : Element
 {
 public:
+
     Circle() {}
     Circle(Point origin, float radius);
     Circle(Point origin, float radius, Style style, string label);
     ~Circle() {}
 
-    string get();
-    vector<string> getSvgVector();
+    string get() { return Element::get(); }
+    vector<string> getSvgVector() { return Element::getSvgVector(); }
     void set(Point origin, float radius, Style style, string label);
-
-private:
-    vector<string> svg;
 };
 
-class Text
+class Text : Element
 {
 public:
+
     Text() {}
     Text(Point origin, string text);
     Text(Point origin, string text, Style style, string label); 
     ~Text() {}
 
-    string get();
-    vector<string> getSvgVector();
+    string get() { return Element::get(); }
+    vector<string> getSvgVector() { return Element::getSvgVector(); }
     void set(Point origin, string text, Style style, string label);
+};
 
-private:
-    vector<string> svg;
-    
+class Image : Element
+{
+public:
+
+    Image() {}
+    Image(Point origin, float width, float height, string path);
+    ~Image() {}
+
+    string get() { return Element::get(); }
+    vector<string> getSvgVector() { return Element::getSvgVector(); }
+    void set(Point origin, float width, float height, string path, string label);
 };
 
 class SVG
@@ -174,6 +189,7 @@ public:
     void background(bool enable);
 
 private:
+
     int vbx;
     int vby;    
     string path;

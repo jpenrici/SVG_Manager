@@ -195,6 +195,9 @@ int main()
     string text = "SVG Manager";
     Text txt(Point(window_size / 2, 30), text, style_text, "Txt");
 
+    // Image(Point origin, float width, float height, string path)
+    Image img(Point(185, 160), 80, 80, "../images/cattleya-08B.png");
+
     // Add 
     imageSVG.add(polygon_1.getSvgVector());
     imageSVG.add(polygon_2.getSvgVector());
@@ -209,6 +212,7 @@ int main()
     imageSVG.add(ABCDE.getSvgVector());
     imageSVG.add(FGHIJ.getSvgVector());
     imageSVG.add(txt.getSvgVector());
+    imageSVG.add(img.getSvgVector());
 
     // Finalize
     imageSVG.make();
