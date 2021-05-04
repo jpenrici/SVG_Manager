@@ -1,42 +1,47 @@
 Name;Function;Path;Number
-Text;Text() ;./Svg_Manager_Snippet/SCpp00_SVGManagerText.sublime-snippet;0 
-swap;Point swap() ;./Svg_Manager_Snippet/SCpp01_SVGManagerSwap.sublime-snippet;1 
-setFont;void setFont(string font) ;./Svg_Manager_Snippet/SCpp02_SVGManagerSetFont.sublime-snippet;2 
-Circle;Circle() ;./Svg_Manager_Snippet/SCpp03_SVGManagerCircle.sublime-snippet;3 
-Style;Style() ;./Svg_Manager_Snippet/SCpp04_SVGManagerStyle.sublime-snippet;4 
-negative;Point negative() ;./Svg_Manager_Snippet/SCpp05_SVGManagerNegative.sublime-snippet;5 
-setFill;void setFill(Color fill, float fill_opacity) ;./Svg_Manager_Snippet/SCpp06_SVGManagerSetFill.sublime-snippet;6 
-Text;Text(Point origin, string text) ;./Svg_Manager_Snippet/SCpp07_SVGManagerText.sublime-snippet;7 
-Color;Color(string color)  ;./Svg_Manager_Snippet/SCpp08_SVGManagerColor.sublime-snippet;8 
-Polygon;Polygon(vector<Point> points) ;./Svg_Manager_Snippet/SCpp09_SVGManagerPolygon.sublime-snippet;9 
-Style;Style(Color fill, Color stroke) ;./Svg_Manager_Snippet/SCpp10_SVGManagerStyle.sublime-snippet;10 
-convert;Point convert(int window_height) ;./Svg_Manager_Snippet/SCpp11_SVGManagerConvert.sublime-snippet;11 
-Rectangle;Rectangle() ;./Svg_Manager_Snippet/SCpp12_SVGManagerRectangle.sublime-snippet;12 
-SVG;SVG(string path) ;./Svg_Manager_Snippet/SCpp13_SVGManagerSVG.sublime-snippet;13 
-Text;Text(Point origin, string text, Style style, string label) ;./Svg_Manager_Snippet/SCpp14_SVGManagerText.sublime-snippet;14 
-getSvgVector;vector<string> getSvgVector() ;./Svg_Manager_Snippet/SCpp15_SVGManagerGetSvgVector.sublime-snippet;15 
-save;void save() ;./Svg_Manager_Snippet/SCpp16_SVGManagerSave.sublime-snippet;16 
-set;void set(Point origin, float radius, Style style, string label) ;./Svg_Manager_Snippet/SCpp17_SVGManagerSet.sublime-snippet;17 
-set;void set(Color fill, float fill_opacity, Color stroke, float stroke_width,float stroke_opacity) ;./Svg_Manager_Snippet/SCpp18_SVGManagerSet.sublime-snippet;18 
-polar;Point polar(float radius, int angle) ;./Svg_Manager_Snippet/SCpp19_SVGManagerPolar.sublime-snippet;19 
-setSize;void setSize(float size_px) ;./Svg_Manager_Snippet/SCpp20_SVGManagerSetSize.sublime-snippet;20 
-Polygon;Polygon() ;./Svg_Manager_Snippet/SCpp21_SVGManagerPolygon.sublime-snippet;21 
-add;void add(vector<string> content) ;./Svg_Manager_Snippet/SCpp22_SVGManagerAdd.sublime-snippet;22 
-Circle;Circle(Point origin, float radius, Style style, string label) ;./Svg_Manager_Snippet/SCpp23_SVGManagerCircle.sublime-snippet;23 
-set;void set(Point origin, float width, float height, float radius_x,float radius_y, Style style, string label) ;./Svg_Manager_Snippet/SCpp24_SVGManagerSet.sublime-snippet;24 
-SVG;SVG(string path, int window_width, int window_height) ;./Svg_Manager_Snippet/SCpp25_SVGManagerSVG.sublime-snippet;25 
-Polygon;Polygon(vector<Point> points, Style style, string label) ;./Svg_Manager_Snippet/SCpp26_SVGManagerPolygon.sublime-snippet;26 
+Circle;Circle() ;./Svg_Manager_Snippet/SCpp00_SVGManagerCircle.sublime-snippet;0 
+Circle;Circle(Point origin, float radius) ;./Svg_Manager_Snippet/SCpp01_SVGManagerCircle.sublime-snippet;1 
+Circle;Circle(Point origin, float radius, Style style, string label) ;./Svg_Manager_Snippet/SCpp02_SVGManagerCircle.sublime-snippet;2 
+Color;Color()  ;./Svg_Manager_Snippet/SCpp03_SVGManagerColor.sublime-snippet;3 
+Color;Color(string color)  ;./Svg_Manager_Snippet/SCpp04_SVGManagerColor.sublime-snippet;4 
+Image;Image() ;./Svg_Manager_Snippet/SCpp05_SVGManagerImage.sublime-snippet;5 
+Image;Image(Point origin, float width, float height, string path) ;./Svg_Manager_Snippet/SCpp06_SVGManagerImage.sublime-snippet;6 
+convert;Point convert(int window_height) ;./Svg_Manager_Snippet/SCpp07_SVGManagerConvert.sublime-snippet;7 
+negative;Point negative() ;./Svg_Manager_Snippet/SCpp08_SVGManagerNegative.sublime-snippet;8 
+polar;Point polar(float radius, int angle) ;./Svg_Manager_Snippet/SCpp09_SVGManagerPolar.sublime-snippet;9 
+swap;Point swap() ;./Svg_Manager_Snippet/SCpp10_SVGManagerSwap.sublime-snippet;10 
+Point;Point()  ;./Svg_Manager_Snippet/SCpp11_SVGManagerPoint.sublime-snippet;11 
+Point;Point(float x, float y)  ;./Svg_Manager_Snippet/SCpp12_SVGManagerPoint.sublime-snippet;12 
+Polygon;Polygon() ;./Svg_Manager_Snippet/SCpp13_SVGManagerPolygon.sublime-snippet;13 
+Polygon;Polygon(vector<Point> points) ;./Svg_Manager_Snippet/SCpp14_SVGManagerPolygon.sublime-snippet;14 
+Polygon;Polygon(vector<Point> points, Style style, string label) ;./Svg_Manager_Snippet/SCpp15_SVGManagerPolygon.sublime-snippet;15 
+Rectangle;Rectangle() ;./Svg_Manager_Snippet/SCpp16_SVGManagerRectangle.sublime-snippet;16 
+Rectangle;Rectangle(Point origin, float width, float height) ;./Svg_Manager_Snippet/SCpp17_SVGManagerRectangle.sublime-snippet;17 
+Rectangle;Rectangle(Point origin, float width, float height, float radius_x,float radius_y, Style style, string label) ;./Svg_Manager_Snippet/SCpp18_SVGManagerRectangle.sublime-snippet;18 
+Rectangle;Rectangle(Point origin, float width, float height, string label) ;./Svg_Manager_Snippet/SCpp19_SVGManagerRectangle.sublime-snippet;19 
+SVG;SVG(string path) ;./Svg_Manager_Snippet/SCpp20_SVGManagerSVG.sublime-snippet;20 
+SVG;SVG(string path, int window_width, int window_height) ;./Svg_Manager_Snippet/SCpp21_SVGManagerSVG.sublime-snippet;21 
+Style;Style() ;./Svg_Manager_Snippet/SCpp22_SVGManagerStyle.sublime-snippet;22 
+Style;Style(Color fill, Color stroke) ;./Svg_Manager_Snippet/SCpp23_SVGManagerStyle.sublime-snippet;23 
+Text;Text() ;./Svg_Manager_Snippet/SCpp24_SVGManagerText.sublime-snippet;24 
+Text;Text(Point origin, string text) ;./Svg_Manager_Snippet/SCpp25_SVGManagerText.sublime-snippet;25 
+Text;Text(Point origin, string text, Style style, string label) ;./Svg_Manager_Snippet/SCpp26_SVGManagerText.sublime-snippet;26 
 get;string get() ;./Svg_Manager_Snippet/SCpp27_SVGManagerGet.sublime-snippet;27 
-set;void set(Point origin, string text, Style style, string label) ;./Svg_Manager_Snippet/SCpp28_SVGManagerSet.sublime-snippet;28 
-clear;void clear() ;./Svg_Manager_Snippet/SCpp29_SVGManagerClear.sublime-snippet;29 
-Rectangle;Rectangle(Point origin, float width, float height) ;./Svg_Manager_Snippet/SCpp30_SVGManagerRectangle.sublime-snippet;30 
-view;void view() ;./Svg_Manager_Snippet/SCpp31_SVGManagerView.sublime-snippet;31 
-set;void set(vector<Point> points, Style style, string label) ;./Svg_Manager_Snippet/SCpp32_SVGManagerSet.sublime-snippet;32 
-Circle;Circle(Point origin, float radius) ;./Svg_Manager_Snippet/SCpp33_SVGManagerCircle.sublime-snippet;33 
-setStroke;void setStroke(Color stroke, float stroke_opacity, float stroke_width) ;./Svg_Manager_Snippet/SCpp34_SVGManagerSetStroke.sublime-snippet;34 
-make;void make() ;./Svg_Manager_Snippet/SCpp35_SVGManagerMake.sublime-snippet;35 
-Color;Color()  ;./Svg_Manager_Snippet/SCpp36_SVGManagerColor.sublime-snippet;36 
-Rectangle;Rectangle(Point origin, float width, float height, string label) ;./Svg_Manager_Snippet/SCpp37_SVGManagerRectangle.sublime-snippet;37 
-Point;Point()  ;./Svg_Manager_Snippet/SCpp38_SVGManagerPoint.sublime-snippet;38 
-Point;Point(float x, float y)  ;./Svg_Manager_Snippet/SCpp39_SVGManagerPoint.sublime-snippet;39 
-Rectangle;Rectangle(Point origin, float width, float height, float radius_x,float radius_y, Style style, string label) ;./Svg_Manager_Snippet/SCpp40_SVGManagerRectangle.sublime-snippet;40 
+getSvgVector;vector<string> getSvgVector() ;./Svg_Manager_Snippet/SCpp28_SVGManagerGetSvgVector.sublime-snippet;28 
+add;void add(vector<string> content) ;./Svg_Manager_Snippet/SCpp29_SVGManagerAdd.sublime-snippet;29 
+background;void background(bool enable) ;./Svg_Manager_Snippet/SCpp30_SVGManagerBackground.sublime-snippet;30 
+clear;void clear() ;./Svg_Manager_Snippet/SCpp31_SVGManagerClear.sublime-snippet;31 
+make;void make() ;./Svg_Manager_Snippet/SCpp32_SVGManagerMake.sublime-snippet;32 
+save;void save() ;./Svg_Manager_Snippet/SCpp33_SVGManagerSave.sublime-snippet;33 
+set;void set(Color fill, float fill_opacity, Color stroke, float stroke_width,float stroke_opacity) ;./Svg_Manager_Snippet/SCpp34_SVGManagerSet.sublime-snippet;34 
+set;void set(Point origin, float radius, Style style, string label) ;./Svg_Manager_Snippet/SCpp35_SVGManagerSet.sublime-snippet;35 
+set;void set(Point origin, float width, float height, float radius_x,float radius_y, Style style, string label) ;./Svg_Manager_Snippet/SCpp36_SVGManagerSet.sublime-snippet;36 
+set;void set(Point origin, float width, float height, string path, string label) ;./Svg_Manager_Snippet/SCpp37_SVGManagerSet.sublime-snippet;37 
+set;void set(Point origin, string text, Style style, string label) ;./Svg_Manager_Snippet/SCpp38_SVGManagerSet.sublime-snippet;38 
+set;void set(vector<Point> points, Style style, string label) ;./Svg_Manager_Snippet/SCpp39_SVGManagerSet.sublime-snippet;39 
+setFill;void setFill(Color fill, float fill_opacity) ;./Svg_Manager_Snippet/SCpp40_SVGManagerSetFill.sublime-snippet;40 
+setFont;void setFont(string font) ;./Svg_Manager_Snippet/SCpp41_SVGManagerSetFont.sublime-snippet;41 
+setPath;void setPath(string path) ;./Svg_Manager_Snippet/SCpp42_SVGManagerSetPath.sublime-snippet;42 
+setSize;void setSize(float size_px) ;./Svg_Manager_Snippet/SCpp43_SVGManagerSetSize.sublime-snippet;43 
+setStroke;void setStroke(Color stroke, float stroke_opacity, float stroke_width) ;./Svg_Manager_Snippet/SCpp44_SVGManagerSetStroke.sublime-snippet;44 
+view;void view() ;./Svg_Manager_Snippet/SCpp45_SVGManagerView.sublime-snippet;45 
