@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager background(enable)</description>
+    <content><![CDATA[background(${1:/* enable */})]]></content>
+    <tabTrigger>background</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

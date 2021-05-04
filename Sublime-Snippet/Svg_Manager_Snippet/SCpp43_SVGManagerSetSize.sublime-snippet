@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager setSize(size_px)</description>
+    <content><![CDATA[setSize(${1:/* size_px */})]]></content>
+    <tabTrigger>setSize</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

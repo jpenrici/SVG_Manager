@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager Polygon(points,style,label)</description>
+    <content><![CDATA[Polygon(${1:/* points */},${2:/* style */},${3:/* label */})]]></content>
+    <tabTrigger>Polygon</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

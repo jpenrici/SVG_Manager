@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager make()</description>
+    <content><![CDATA[make${0:/* Code or () */}]]></content>
+    <tabTrigger>make</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

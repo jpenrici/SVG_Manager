@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager negative()</description>
+    <content><![CDATA[negative${0:/* Code or () */}]]></content>
+    <tabTrigger>negative</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 

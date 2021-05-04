@@ -1,0 +1,7 @@
+<!-- Automatically built. Update as needed! -->
+<snippet>
+    <description>SVG Manager SVG(path,window_width,window_height)</description>
+    <content><![CDATA[SVG(${1:/* path */},${2:/* window_width */},${3:/* window_height */})]]></content>
+    <tabTrigger>SVG</tabTrigger>
+    <scope>source.c++</scope>
+</snippet> 
