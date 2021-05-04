@@ -25,7 +25,8 @@ class Style
     void setStroke(Color stroke, float stroke_opacity, float stroke_width);
     void setFont(string font);
     void setSize(float size_px);    // pixel
-    void set(Color fill, float fill_opacity, Color stroke, float stroke_width, float stroke_opacity);  
+    void set(Color fill, float fill_opacity, Color stroke, float stroke_width,
+        float stroke_opacity);  
 
 class Point
 
@@ -54,11 +55,13 @@ class Rectangle
     Rectangle();
     Rectangle(Point origin, float width, float height);
     Rectangle(Point origin, float width, float height, string label);
-    Rectangle(Point origin, float width, float height, float radius_x, float radius_y, Style style, string label);
+    Rectangle(Point origin, float width, float height, float radius_x,
+        float radius_y, Style style, string label);
 
     string get();
     vector<string> getSvgVector();
-    void set(Point origin, float width, float height, float radius_x, float radius_y, Style style, string label); 
+    void set(Point origin, float width, float height, float radius_x,
+        float radius_y, Style style, string label); 
 
 class Circle
 
@@ -72,13 +75,23 @@ class Circle
 
 class Text
 
-    Text() {}
+    Text();
     Text(Point origin, string text);
     Text(Point origin, string text, Style style, string label); 
 
     string get();
     vector<string> getSvgVector();
     void set(Point origin, string text, Style style, string label);
+
+class Image
+
+    Image();
+    Image(Point origin, float width, float height, string path);
+
+    string get();
+    vector<string> getSvgVector();
+    void set(Point origin, float width, float height, string path,
+        string label);
 
 class SVG
 
