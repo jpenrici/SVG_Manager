@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager set(points,style,label)</description>
-    <content><![CDATA[set(${1:/* points */},${2:/* style */},${3:/* label */})]]></content>
-    <tabTrigger>set</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

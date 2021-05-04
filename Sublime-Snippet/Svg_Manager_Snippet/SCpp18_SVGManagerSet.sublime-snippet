@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager set(fill,fill_opacity,stroke,stroke_width,stroke_opacity)</description>
-    <content><![CDATA[set(${1:/* fill */},${2:/* fill_opacity */},${3:/* stroke */},${4:/* stroke_width */},${5:/* stroke_opacity */})]]></content>
-    <tabTrigger>set</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

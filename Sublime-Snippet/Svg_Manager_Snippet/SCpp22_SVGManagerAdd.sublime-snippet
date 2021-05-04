@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager add(content)</description>
-    <content><![CDATA[add(${1:/* content */})]]></content>
-    <tabTrigger>add</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

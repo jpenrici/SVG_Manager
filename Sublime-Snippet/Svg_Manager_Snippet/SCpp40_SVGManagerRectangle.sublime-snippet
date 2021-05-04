@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager Rectangle(origin,width,height,radius_x,radius_y,style,label)</description>
-    <content><![CDATA[Rectangle(${1:/* origin */},${2:/* width */},${3:/* height */},${4:/* radius_x */},${5:/* radius_y */},${6:/* style */},${7:/* label */})]]></content>
-    <tabTrigger>Rectangle</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

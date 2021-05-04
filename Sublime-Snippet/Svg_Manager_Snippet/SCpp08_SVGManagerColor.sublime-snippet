@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager Color(color)</description>
-    <content><![CDATA[Color(${1:/* color */})]]></content>
-    <tabTrigger>Color</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

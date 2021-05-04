@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager polar(radius,angle)</description>
-    <content><![CDATA[polar(${1:/* radius */},${2:/* angle */})]]></content>
-    <tabTrigger>polar</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager Text(origin,text)</description>
-    <content><![CDATA[Text(${1:/* origin */},${2:/* text */})]]></content>
-    <tabTrigger>Text</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 
