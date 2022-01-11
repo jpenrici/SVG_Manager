@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager setFill(fill,fill_opacity)</description>
-    <content><![CDATA[setFill(${1:/* fill */},${2:/* fill_opacity */})]]></content>
-    <tabTrigger>setFill</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

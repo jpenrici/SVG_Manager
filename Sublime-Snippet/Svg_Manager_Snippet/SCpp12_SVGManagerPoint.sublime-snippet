@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager Point(x,y)</description>
-    <content><![CDATA[Point(${1:/* x */},${2:/* y */})]]></content>
-    <tabTrigger>Point</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 

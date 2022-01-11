@@ -1,7 +1,0 @@
-<!-- Automatically built. Update as needed! -->
-<snippet>
-    <description>SVG Manager Image(origin,width,height,path)</description>
-    <content><![CDATA[Image(${1:/* origin */},${2:/* width */},${3:/* height */},${4:/* path */})]]></content>
-    <tabTrigger>Image</tabTrigger>
-    <scope>source.c++</scope>
-</snippet> 
